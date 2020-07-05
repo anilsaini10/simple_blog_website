@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>vrform</h1>
+    <form method="POST" action="{% url 'vrform' %}">
+        {% csrf_token %}
+        
+        <!-- <input type="text" placeholder="heading"/><br> -->
+        <!-- <h1>{{form.videoname}}</h1> -->
+        {{form.videoname}}
+        {{form.videodesc}}
+        <!-- <input type="text" placeholder="description"/><br> -->
+        <button type="submit" title="enter">submit</button>
+    </form>
+    
+</body>
+</html>

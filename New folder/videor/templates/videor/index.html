@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        .container{
+            width: auto;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>index</h1>
+    <a href="vrform">go to  form</a>
+    {% for v in videos %}
+    <div class="container">
+        <div>
+            <h1>{{v.videotitle}}</h1>
+        </div>
+        <div>
+            <h2>{{v.videodesc}}</h2>
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>
